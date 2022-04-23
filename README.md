@@ -1,46 +1,146 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <img alt="Happy" title="Happy" src=".github/logo.png" />
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">
+  Projeto Orfanato
+</h3>
 
-## Available Scripts
+<p align="center">
+  <a href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-license">License</a>
+</p>
 
-In the project directory, you can run:
+<p id="insomniaButton" align="center">
+  <a href="#" target="_blank">
+    <img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia">
+  </a>
+</p>
 
-### `yarn start`
+<p align="center">
+  <img alt="Happy" src="./src/assets/images/happy.png" width="100%">
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🧸 About the project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Happy is an application that connects people to institutional care homes to make many children's day happier
 
-### `yarn test`
+## 🚀 Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Technologies that I used to develop this application
 
-### `yarn build`
+- [Node.js](https://nodejs.org/en/)
+- [ReactJS](https://reactjs.org/)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Expo](https://expo.io/)
+- [Express](https://expressjs.com/pt-br/)
+- [TypeORM](https://typeorm.io/#/)
+- [Yup](https://github.com/jquense/yup)
+- [Axios](https://github.com/axios/axios)
+- [React Router DOM](https://reacttraining.com/react-router/)
+- [React Navigation](https://reactnavigation.org/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 💻 Getting started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Import the `Insomnia.json` on Insomnia App or click on [Run in Insomnia](#insomniaButton) button
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Requirements
 
-### `yarn eject`
+- [Node.js](https://nodejs.org/en/)
+- [Yarn](https://classic.yarnpkg.com/)
+- [Expo](https://expo.io/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+$ git clone https://github.com/CristianoVieira1/projeto_orfanato.git && cd nlw-3
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Follow the steps below**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Backend
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+# Starting from the project root folder, go to backend folder
+$ cd backend
 
-## Learn More
+# Install the dependencies
+$ yarn
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Use the script to run the migrations
+$ yarn typeorm migration:run
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# To finish, run the api service
+$ yarn dev
+
+# Well done, project is started!
+```
+
+### Web
+
+_Obs.: Before to continue, be sure to have the API running_
+
+```bash
+# Starting from the project root folder, go to web folder
+$ cd web
+
+# Install the dependencies
+$ yarn
+
+# Be sure the file 'src/services/api.ts' have the IP to your API
+
+# Start the client
+$ yarn start
+```
+
+### Mobile
+
+_Obs.: Before to continue, be sure to have the API running_
+
+```bash
+# Starting from the project root folder, go to mobile folder
+$ cd mobile
+
+# Be sure the file 'src/services/api.ts' have the IP to your API
+
+# Start the expo service and scan the QR code with Expo Client
+$ yarn start
+```
+
+## 🤔 How to contribute
+
+**Make a fork of this repository**
+
+```bash
+# Fork using GitHub official command line
+# If you don't have the GitHub CLI, use the web site to do that.
+
+$ gh repo fork CristianoVieira1/projeto_orfanato
+```
+
+**Follow the steps below**
+
+```bash
+# Clone your fork
+$ git clone your-fork-url && cd nlw-3
+
+# Create a branch with your feature
+$ git checkout -b my-feature
+
+# Make the commit with your changes
+$ git commit -m 'feat: My new feature'
+
+# Send the code to your remote branch
+$ git push origin my-feature
+```
+
+After your pull request is merged, you can delete your branch
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+Made with 💜&nbsp; by Cristiano Borges 👋 &nbsp;[See my linkedin](https://www.linkedin.com/in/cristianobv/)
